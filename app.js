@@ -12,12 +12,9 @@ app.set('view engine', 'ejs');
 
 // database connection lesson
 //const dbURI = 'mongodb+srv://shaun:test1234@cluster0.del96.mongodb.net/node-auth';
-// database connection ,my cloud
-//const dbURI = 'mongodb+srv://zmploca:HtDIwXuuLhWjTuI2@clustercloud.dhf6qaf.mongodb.net/ClusterCloud';
-//const dbURI = 'mongodb+srv://zmploca:HtDIwXuuLhWjTuI2@clustercloud.dhf6qaf.mongodb.net/?retryWrites=true&w=majority';
-const dbURI = 'mongodb+srv://zmploca:HtDIwXuuLhWjTuI2@clustercloud.dhf6qaf.mongodb.net/nodeauth';
+
 // localhost
-//const dbURI = 'mongodb://localhost:27017/'
+const dbURI = 'mongodb://localhost:27017/'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
